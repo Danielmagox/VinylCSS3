@@ -5,6 +5,9 @@ body {
 
 .container {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 
 .cover {
@@ -14,25 +17,60 @@ body {
 	margin-right: -50px;
 	z-index: 1;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.triangle {
-	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-	height: 150px;
-	width: 150px;
-	background-color: white;
+	align-items: stretch;
 }
 
 .vinyl {
 	height: 300px;
 	width: 300px;
-	background-color: black;
+	background: black;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: 2s;
+}
+
+.rainbow_yellow {
+	background-color: greenyellow;
+	height: 100%;
+	width: 100%;
+}
+
+.rainbow_green {
+	background-color: green;
+	height: 100%;
+	width: 100%;
+}
+
+.rainbow_pink {
+	background-color: pink;
+	height: 100%;
+	width: 100%;
+}
+
+.rainbow_red {
+	background-color: red;
+	height: 100%;
+	width: 100%;
+}
+
+.rainbow_yellowS {
+	background-color: yellow;
+	height: 100%;
+	width: 100%;
+}
+
+.rainbow_purple {
+	background-color: purple;
+	height: 100%;
+	width: 100%;
+}
+
+.rainbow_blue {
+	background-color: blue;
+	height: 100%;
+	width: 100%;
 }
 
 .red {
@@ -42,9 +80,27 @@ body {
 	border-radius: 50%;
 }
 
+.title {
+	height: 20px;
+	width: 150px;
+	background-color: black;
+	position: absolute;
+	margin-left: 75px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.font-title {
+	font-size: 8px;
+}
+
 .white {
 	height: 25px;
 	width: 25px;
 	background-color: white;
 	border-radius: 50%;
+}
+
+.vinyl:hover {
+	transform: translateX(-250px);
 }
